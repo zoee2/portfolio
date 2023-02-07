@@ -1,0 +1,537 @@
+@charset "UTF-8";
+
+/* MAIN-COMMON - S */
+.sec {padding: 100px 0; box-sizing: border-box;}
+.sec-header {
+    margin-bottom: 100px;
+    text-align: center;
+}
+.sec-header .sec-tit {
+    margin-bottom: 30px;
+    font-weight: 700; font-size: 50px; line-height: 70px; color: #0d072b;
+}
+.sec-header .sec-desc {font-weight: 300; font-size: 18px; line-height: 30px; color: #333;}
+.btn {
+    display: block;
+    width: 260px; height: 70px;
+    padding-left: 40px; margin: 0 auto; box-sizing: border-box;
+    border-radius: 35px;
+    font-size: 20px; line-height: 70px; color: #fff;
+    background-color: #32228c;
+    position: relative;
+}
+.btn span {
+    width: 2px; height: 10px;
+    background-color: #fff;
+    position: absolute; right: 55px; top: 25px;
+    transition: all 0.2s;
+}
+.btn span:nth-child(2) {
+    width: 20px; height: 2px;
+    right: 46px; top: 34px;
+}
+.btn span:last-child {top: 35px;}
+
+.btn:hover span:first-child {
+    transform: rotate(-45deg);
+    right: 35px; top: 26px;
+}
+.btn:hover span:nth-child(2) {
+    width: 35px;
+    right: 31px;
+}
+.btn:hover span:last-child {
+    transform: rotate(45deg);
+    right: 35px; top: 34px;
+}
+/* MAIN-COMMON - E */
+
+
+
+/* MAIN - S */
+/* visual - s */
+.visual {
+    width: 100%; height: 960px;
+    margin-bottom: 100px;
+}
+.visual .swiper-slide {background-repeat: no-repeat; background-position: center center; }
+.visual .slide1 {background-image: url(../img/visual1.png);}
+.visual .slide2 {background-image: url(../img/visual2.png);}
+.visual .slide3 {background-image: url(../img/visual3.png);}
+.visual .visual-txt {
+    padding: 340px 20px 0 20px; box-sizing: border-box; 
+    color: #fff;
+    position: relative;
+    transition: all 1s;
+}
+.visual .visual-txt h3 {
+    display: block;
+    margin-bottom: 25px;
+    font: 700 70px/80px 'Raleway', sans-serif;
+}
+.visual .visual-txt h3 em {color: #f8d200;}
+.visual .visual-txt p {font-size: 22px; line-height: 30px;}
+.visual .visual-txt p span {display: none;}
+.visual .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    color: #fff;
+    left: 110px; top: 825px;
+}
+.visual .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+    color: #fff;
+    left: 20px; top: 825px;
+}
+.visual .swiper-pagination {
+    width: auto; height: 20px;
+    font: 18px/20px 'Raleway'; color: #fff;
+    position: absolute; left: 55px; top: 815px;
+}
+/* visual - e */
+
+/* iot - s */
+.iot {padding: 100px 100px; box-sizing: border-box; overflow: hidden;}
+.iot-merlotlab {display: flex; justify-content: space-between;}
+.iot > div + div {margin-top: 100px;}
+.iot-text {
+    width: calc( 100% * 0.36 );
+    padding-top: 100px; box-sizing: border-box;
+}
+.iot-text .iot-tit {
+    margin-bottom: 30px;
+    font-size: 20px; line-height: 25px; color: #32228c;
+}
+.iot-text .iot-tit span {
+    display: block;
+    font: 700 35px/60px 'Raleway'; color: #333;
+}
+.iot-text .iot-desc {
+    margin-bottom: 70px;
+    font-weight: 300; font-size: 20px; line-height: 30px;
+}
+.iot-img {
+    width: calc( 100% * 0.58 ); 
+    overflow: hidden;
+    margin-right: 80px;
+    border-radius: 40px;
+}
+.iot > div:nth-of-type(2) .iot-img {
+    order: 1;
+    margin-right: 0;
+}
+.iot-img img {width: 100%; }
+.iot .more-btn {
+    font-size: 14px; line-height: 20px; color: #777;
+    position: relative;
+}
+.iot .more-btn span {
+    width: 11px; height: 1px;
+    background-color: #777;
+    position: absolute; right: -20px; top: 10px;
+}
+.iot .more-btn span:last-child {
+    width: 1px; height: 11px;
+    right: -15px; top: 5px;
+}
+
+.iot-merlotlab:hover .more-btn span {animation: rotate 2s linear infinite;}
+@keyframes rotate {
+    to {transform: rotate(360deg);}
+}
+/* iot - e */
+
+/* technology - s */
+.tech-menu {
+    display: flex; justify-content: center;
+    margin-bottom: 60px;
+}
+.tech-menu-list + .tech-menu-list {margin-left: 15px;}
+.tech-menu-list a {
+    display: block;
+    height: 40px;
+    padding: 0 20px; box-sizing: border-box;
+    font-size: 24px; line-height: 40px; color: #777; 
+    position: relative;
+}
+.tech-menu-list a::after {content: "";
+    display: none;
+    width: 100%; height: 1px;
+    background-color: #583cf2;
+    position: absolute; left: 0; bottom: 0;
+}
+.tech {overflow: hidden;}
+.tech-slick {
+    padding: 0 50px; box-sizing: border-box; margin-bottom: 75px;
+    position: relative;
+}
+.tech-text::before {content: "";
+    width: 70px; height: 70px;
+    background-image: url(../img/tech-icon.png);
+    position: absolute; left: 50px; top: 50px;
+}
+.dual .tech-text::before {background-position: -70px 0;}
+.smart .tech-text::before {
+    width: 53px;
+    background-position: -140px 0;
+}
+.m-iot .tech-text::before {
+    width: 69px;
+    background-position: -193px 0;
+}
+.tech-text {
+    width: 360px;
+    padding: 150px 50px 45px 50px ; box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: 500; font-size: 24px; line-height: 30px; color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute; left: 130px; top: 80px;
+}
+.tech-text em {
+    display: block;
+    margin-bottom: 20px;
+}
+.tech-text span {
+    display: block;
+    font-weight: 300; font-size: 18px; line-height: 25px; 
+}
+.tech-img {width: 100%;}
+.tech-img img {
+    width: 100%; 
+    border-radius: 25px;
+}
+
+.tech-menu-list a:hover {color: #583cf2;}
+.tech-menu-list a:hover::after {display: block;}
+/* technology - e */
+
+/* newsroom - s */
+.newsroom {padding: 100px 80px; box-sizing: border-box;}
+.newsroom-wrap {
+    display: flex; justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.newsroom-wrap > div {
+    width: calc( ( 100% - 120px ) / 3 );
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 3px 5px 5px rgba(0,0,0,0.1);
+}
+.newsroom-wrap > div + div {margin-left: 40px;}
+.newsroom-list-img {width: 100%;}
+.newsroom-list-img img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.newsroom-list-text {padding: 40px;}
+.newsroom-list-text strong {
+    display: block;
+    margin-bottom: 30px;
+    font: 600 18px/30px 'Raleway'; color: #583cf2;
+}
+.newsroom-list-text p {
+    margin-bottom: 20px;
+    font-size: 18px; line-height: 30px;
+}
+.newsroom-list-text span {
+    font-weight: 300; line-height: 30px; color: #777;
+}
+/* newsroom - e */
+/* MAIN - E */
+
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 1440 px 
+**********  ********** **********/
+@media ( max-width : 1440px ) {
+    /* MAIN - S */
+    /* iot - s */
+    .iot {padding: 100px 80px;}
+    .iot-text {padding-top: 70px;}
+    .iot-text .iot-tit {margin-bottom: 30px;}
+    .iot-text .iot-tit span {font-size: 30px; line-height: 50px;}
+    .iot-text .iot-desc {margin-bottom: 50px;}
+    .iot-img {margin-right: 0px;}
+    /* iot - e */
+
+    /* newsroom - s */
+    .newsroom {padding: 100px 20px;}
+    /* newsroom - e */
+
+    /* MAIN - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 1280 px 
+**********  ********** **********/
+@media ( max-width : 1280px ) {
+    /* MAIN-COMMON - S */
+    .sec {padding: 80px 0;}
+    .sec-header {margin-bottom: 80px;}
+    .sec-header .sec-tit {
+        margin-bottom: 20px;
+        font-size: 40px; line-height: 60px;
+    }
+    .sec-header .sec-desc {font-size: 16px; line-height: 25px;}
+    .btn {
+        width: 230px; height: 60px;
+        font-size: 18px; line-height: 60px;
+    }
+    .btn span {
+        height: 9px;
+        right: 48px; top: 23px;
+    }
+    .btn span:nth-child(2) {
+        width: 18px;
+        right: 40px; top: 31px;
+    }
+    .btn span:last-child {top: 32px;}
+    
+    .btn:hover span:first-child {right: 31px; top: 24px;}
+    .btn:hover span:nth-child(2) {
+        width: 30px;
+        right: 28px;
+    }
+    .btn:hover span:last-child {right: 31px; top: 31px;}
+    /* MAIN-COMMON - E */
+
+
+    /* MAIN - S */
+    /* visual - s */
+    .visual {margin-bottom: 80px;}
+    .visual .visual-txt {padding-top: 350px;}
+    .visual .visual-txt h3 {font-size: 60px; line-height: 70px;}
+    .visual .visual-txt p {font-size: 20px;}
+    /* visual - e */
+
+    /* iot - s */
+    .iot {padding: 80px 20px; box-sizing: border-box;}
+    .iot-merlotlab {justify-content: start; flex-flow: column;}
+    .iot > div + div {margin-top: 80px;}
+    .iot-text {
+        display: flex;
+        width: 100%;
+        padding-top: 0; 
+    }
+    .iot-text .iot-tit {
+        flex-basis: 230px; 
+        margin: 0 50px 0 0;
+        font-size: 18px; line-height: 30px;
+    }
+    .iot-text .iot-tit span {line-height: 40px;}
+    .iot-text .iot-desc {
+        margin-bottom: 0; padding-top: 10px;
+        font-size: 18px; line-height: 25px;
+    }
+    .iot-img {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .iot > div:nth-of-type(2) .iot-img {order: 0;}
+    .iot .more-btn {display: none;}
+    /* iot - e */
+
+    /* technology - s */
+    .tech-menu {margin-bottom: 50px;}
+    .tech-menu-list + .tech-menu-list {margin-left: 10px;}
+    .tech-menu-list a {
+        padding: 0 15px;
+        font-size: 20px; line-height: 35px;
+    }
+    .tech-slick {
+        width: 4%;
+        padding: 0 30px; margin-bottom: 55px;
+    }
+    .tech-text {
+        padding: 70px 50px 45px 50px ;
+        font-size: 22px; 
+        position: absolute; left: 100px; top: 80px;
+    }
+    .tech-text em {padding-left: 100px; margin-bottom: 40px; box-sizing: border-box;}
+    .tech-text span {font-size: 16px;}
+    /* technology - e */
+
+    /* newsroom - s */
+    .newsroom {padding: 80px 20px;}
+    .newsroom-wrap {
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    .newsroom-wrap > div {width: calc( ( 100% - 40px ) / 2 );}
+    .newsroom-wrap > div:nth-of-type(n+1):nth-of-type(-n+2) {margin-bottom: 60px;}
+    .newsroom-wrap > div:nth-child(3) {margin-left: 0;}
+    /* newsroom - e */
+    /* MAIN - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 780 px 
+**********  ********** **********/
+@media ( max-width : 780px ) {
+    /* MAIN-COMMON - S */
+    .sec {padding: 60px 0;}
+    .sec-header {margin-bottom: 60px;}
+    .sec-header .sec-tit {
+        margin-bottom: 0;
+        font-size: 30px; line-height: 40px;
+    }
+    .sec-header .sec-desc {display: none;}
+    .btn {
+        width: 170px; height: 45px;
+        padding-left: 25px;
+        font-size: 15px; line-height: 45px;
+    }
+    .btn span {
+        height: 7px;
+        right: 31px; top: 17px;
+    }
+    .btn span:nth-child(2) {
+        width: 14px;
+        right: 25px; top: 23px;
+    }
+    .btn span:last-child {top: 24px;}
+    
+    .btn:hover span:first-child {right: 17px; top: 18px;}
+    .btn:hover span:nth-child(2) {
+        width: 24px;
+        right: 15px;
+    }
+    .btn:hover span:last-child {right: 17px; top: 24px;}
+    /* MAIN-COMMON - E */
+
+
+    /* MAIN - S */
+    /* visual - s */
+    .visual {
+        height: 700px;
+        margin-bottom: 60px;
+    }
+    .visual .visual-txt {padding-top: 270px;}
+    .visual .visual-txt h3 {
+        margin-bottom: 20px;
+        font-size: 50px; line-height: 60px;
+    }
+    .visual .visual-txt h3 span {display: none;}
+    .visual .visual-txt p {font-size: 16px; line-height: 25px;}
+    .visual .swiper-button-next {left: 110px; top: 720px;}
+    .visual .swiper-button-prev {left: 20px; top: 720px;}
+    .visual .swiper-pagination {left: 55px; top: 710px;}
+    /* visual - e */
+
+    /* iot - s */
+    .iot {padding: 60px 20px;}
+    .iot > div + div {margin-top: 60px;}
+    .iot-text {display: block;}
+    .iot-text .iot-tit {
+        display: flex;
+        width: auto; height: 30px;
+        margin: 0;
+        font-size: 14px; line-height: 30px;
+    }
+    .iot-text .iot-tit span {
+        order: -1;
+        padding-right: 20px; margin-top: -5px;
+        font-size: 25px;
+    }
+    .iot-text .iot-desc {font-size: 15px;}
+    .iot-img {
+        margin: 0 0 20px 0;
+        border-radius: 30px;
+    }
+    /* iot - e */
+    
+    /* technology - s */
+    .tech-menu {display: none;}
+    .tech-slick {
+        width: 2.5%;
+        padding: 0 10px; 
+    }
+    .tech-text::before {display: none;}
+    .tech-text {
+        width: 150px;
+        padding: 0; 
+        text-align: right; text-shadow: 2px 2px 0 #000;
+        background-color: transparent;
+        left: 310px; top: 180px;
+    }
+    .tech-text em {padding-left: 0; margin-bottom: 0;}
+    .tech-text span {display: none;}
+    .tech-img img {border-radius: 20px;}
+    /* technology - e */
+    
+    /* newsroom - s */
+    .newsroom {padding: 60px 20px;}
+    .newsroom-wrap {margin-bottom: 60px;}
+    .newsroom-wrap > div {width: calc( ( 100% - 40px ) / 2 );}
+    .newsroom-wrap > div + div {margin-left: 20px;}
+    .newsroom-wrap > div:nth-of-type(n+1):nth-of-type(-n+2) {margin-bottom: 40px;}
+    .newsroom-list-text {padding: 30px 30px 40px 30px;}
+    .newsroom-list-text p {font-size: 16px; line-height: 25px;}
+    .newsroom-list-text span {font-size: 14px; line-height: 25px;}
+    /* newsroom - e */
+    /* MAIN - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 520 px 
+**********  ********** **********/
+@media ( max-width : 520px ) {
+    /* MAIN - S */
+    /* visual - s */
+    .visual {height: 550px;}
+    .visual .visual-txt {
+        width: 310px; 
+        margin: 0; padding-top: 200px;
+    }
+    .visual .visual-txt h3 {
+        margin-bottom: 15px;
+        font-size: 40px; line-height: 45px;
+    }
+    .visual .visual-txt p {font-size: 14px; line-height: 20px;}
+    .visual .visual-txt p span {display: block;}
+    /* visual - e */
+
+    /* iot - s */
+    .iot-img {border-radius: 20px;}
+    /* iot - e */
+
+    /* technology - s */
+    .tech-slick {
+        width: 1.8%;
+        padding: 0 5px; 
+    }
+    .tech-text {
+        width: 150px;
+        font-size: 20px; 
+        left: 190px; top: 130px;
+    }
+    .tech-text em {padding-left: 0; margin-bottom: 0;}
+    .tech-text span {display: none;}
+    .tech-img img {border-radius: 20px;}
+    /* technology - e */
+
+    /* newsroom - s */
+    .newsroom-wrap {margin-bottom: 40px;}
+    .newsroom-wrap > div {width: 100%;}
+    .newsroom-wrap > div + div {margin: 30px 0 0 0;}
+    .newsroom-wrap > div:nth-of-type(n+1):nth-of-type(-n+2) {margin-bottom: 0;}
+    .newsroom-wrap > div:last-child {display: none;}
+    /* newsroom - e */
+
+    /* MAIN - E */
+}
