@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+/* font-family: 'Gruppo', cursive; */
+
+* ,::after ,::before {box-sizing: border-box;}  /* flex를 할 때(3차 때)는 이렇게 쓰면 안 됨!! */
+.hidden {
+    width: 0; height: 0; overflow: hidden;
+    font-size: 0; line-height: 0; text-indent: -9999px;
+    position: absolute; left: -9999px;
+}
+.clearfix::after {content: ""; display: block; clear: both;}
+
+a {text-decoration: none; color: inherit;}
+body {font: 16px/1 'Noto Sans KR', "돋움", dotum, sans-serif; letter-spacing: 0.5px;}
+
+.header {
+    width: 600px; height: 100%;
+    background-color: #010069;
+    position: fixed; left: -500px; top: 0; z-index: 100;
+    transform: skew(-40deg);
+}
+.logo {
+    width: 174px; height: 88px;
+    position: absolute; left: 180px; top: 50px;
+    transform: skew(40deg);
+}
+.logo a {
+    display: block;
+    width: 100%; height: 88px;
+    text-indent: -9999px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gnb {position: absolute; right: 0; top: 100px;}
+.gnb .depth1 {
+    width: 200px;
+    position: relative;
+}
+.gnb .depth1 > a {
+    display: block;
+    width: 100%; height: 50px;
+    padding-right: 50px;
+    font: 700 18px/50px 'Gruppo', cursive; color: #fff;
+    background-color: #d90001;
+}
+.gnb .depth1 span {
+    display: block;
+    width: 100%; height: 50px;
+    line-height: 50px; text-align: right;
+    transform: skew(40deg);
+}
+.gnb .depth2 {
+    position: absolute; left: 0; top: 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.gnb .depth2 li {width: 170px; height: 40px;}
+.gnb .depth2 li a {
+    display: block;
+    width: 100%; height: 40px;
+    color: #fff;
+    background-color: #fdbd00;
+}
+.gnb .depth2 li a span {
+    display: block;
+    width: 100%; height: 40px;
+    font: 700 15px/40px 'Gruppo', cursive; text-align: center;
+}
+
+.gnb .depth1:hover .depth2 {
+    left: 200px;
+    opacity: 1;
+}
+
+#block {width: 100%; height: 100vh;}
+.mov {
+    width: 100%; min-width: 1600px;
+    position: fixed; left: 0; top: 0;
+}
+.mov video {width: 100%;}
+.text {position: fixed; right: 30px; top: 25px; z-index: 100;}
+.text-tit {font: 130px/1 'Monoton'; color: #fff;}
+.text-desc {
+    padding-right: 20px;
+    font: 50px/30px 'Gruppo'; text-align: right; color: #010069;
+}
+.down {
+    width: 100px; height: 100px;
+    margin-left: -50px;
+    position: fixed; left: 50%; bottom: 70px; z-index: 100;
+    animation: ani 1.5s infinite;
+}
+
+@keyframes ani {
+    0%   {transform: translate(0,0);}
+    50%  {transform: translate(0,20px);}
+    100% {transform: translate(0,0);}  
+}
+
+
+.footer {
+    width: 800px; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed; right: -850px; bottom: 0; z-index: 100;
+    transform: skew(-40deg);
+    transition: all 0.5s;
+}
+.f-wrap {
+    width: 700px; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute; left: 150px; bottom: 0; 
+    transition: all 1s;
+}
+.f-img {
+    width: 300px;
+    position: absolute; left: 50px; bottom: 50px;
+}
+.f-img li {
+    transform: translate(150px, 0);
+    transition: all 0.5s;
+}
+.f-img li:nth-child(1) {transition-delay: 0.1s;}
+.f-img li:nth-child(2) {transition-delay: 0.2s;}
+.f-img li:nth-child(3) {transition-delay: 0.3s;}
+.f-img li + li {margin-top: 15px;}
+.f-img li em {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700; font-size: 18px; color: #fdbd00;
+    transform: skew(40deg);
+}
+.f-img li a img {width: 250px;}
+
+.footer:hover {right: -550px;}
+.footer:hover .f-wrap {left: 70px;}
+.footer:hover .f-img li {transform: translate(0,0);}

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* SUB4-COMMON - S */
+.visual {background-image: url(../img/sub-visual4.png);}
+.sec-tit {
+    margin-bottom: 45px;
+    font-weight: 700; font-size: 25px; line-height: 35px; color: #2e8b57;
+}
+/* SUB4-COMMON - E */
+
+/* SUB4-1 - S */
+.chairman-box {position: relative;}
+.chairman-box-desc {padding: 35px 0 5px 410px;}
+.chairman-box-desc p {
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.chairman-box-img {position: absolute; left: 0; top: 0;}
+.chairman-box-img img {border-radius: 30px 0 30px 0;}
+.sponsor-benefit {padding-left: 35px; margin-bottom: 80px;}
+.sponsor-tit {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 700; font-size: 20px; line-height: 35px; color: #766d5e;
+    position: relative;
+}
+.sponsor-tit span {
+    font-size: 30px; color: #766d5e;
+    position: absolute; left: -35px; top: 2px;
+}
+.sponsor-box-desc {float: left;}
+.sponsor-box-desc li {
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.sponsor-box-img {float: right;}
+.sponsor-effect .sponsor-tit {padding-left: 720px;}
+.sponsor-effect .sponsor-tit span {left: 685px;}
+.sponsor-effect .sponsor-box-desc {
+    float: right;
+    width: 560px;
+    padding-left: 35px;
+}
+.sponsor-effect .sponsor-box-img {float: left;}
+.program {
+    margin-bottom: 80px;
+    position: relative;
+}
+.program > div {padding-left: 35px; margin-bottom: 45px;}
+.program-tit {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 700; font-size: 20px; line-height: 35px; color: #766d5e;
+    position: relative;
+}
+.program-tit span {
+    font-size: 30px; color: #766d5e;
+    position: absolute; left: -35px; top: 2px;
+}
+.program-desc p {
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.program .application .program-desc {height: 60px;}
+.program .application .program-desc li {
+    float: left; 
+    width: 225px; height: 60px;
+    padding-left: 75px;
+    line-height: 60px;
+    position: relative;
+}
+.program .application .program-desc li:nth-child(3) {margin-right: 20px;}
+.program .application .program-desc li:after {content: "";
+    width: 60px; height: 60px;
+    background-image: url(../img/sub-support-icon.png);
+    position: absolute; left: 0px; top: 0;
+}
+.program .application .program-desc li:nth-child(2):after {
+    width: 65px;
+    background-position: -60px 0;
+}
+.program .application .program-desc li:nth-child(3):after {
+    width: 50px;
+    background-position: -125px 0;
+}
+.program .application .program-desc li:last-child:after {background-position: -175px 0;} 
+.program-img {position: absolute; right: 0; top: 195px;}
+/* SUB4-1 - E */

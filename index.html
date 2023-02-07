@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h-yeong Portfolio</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="hover/css/hover01.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo"><a href="#">포트폴리오</a></h1>
+            <div class="menu">
+                <div class="menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-wrap">
+                    <div class="inner">
+                        <div class="menu-close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">PROJECT</a></li>
+                            <li><a href="#">MULTI/DYNAMIC</a></li>
+                            <li><a href="#">UI/UX FIGMA</a></li>
+                            <li><a href="#">GRAPHIC/HOVER</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro sec">
+        <div class="inner">
+            <div class="intro-txt" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <p>Welcome <span>to</span></p>
+                <p>Hwa yeong's</p>
+                <p>Portfolio</p>
+            </div>
+            <p data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"><strong>Web</strong>Design & Publishing</p>
+            <figure class="intro-img-moon"><img src="img/intro-moon.png" alt=""></figure>
+            <figure class="intro-img-whale"><img src="img/intro-whale.png" alt=""></figure>
+        </div>
+    </section>
+    <section class="about sec scroll-top">
+        <div class="inner">
+            <figure class="about-img"><img src="img/profile.jpg" alt=""></figure>
+            <div class="about-txt">
+                <h2 class="tit">About me<span> .</span></h2>
+                <ul>
+                    <li class="about-wrap personal">
+                        <em>김화영</em>
+                        <ul class="about-wrap-list">
+                            <li>1992. 11. 23</li>
+                            <li>010 - 2675 - 0843</li>
+                            <li>lek1123@naver.com</li>
+                        </ul>
+                    </li>
+                    <li class="about-wrap edu">
+                        <em>Education</em>
+                        <ul class="about-wrap-list">
+                            <li><span>2023. 02</span>NCS 기반 UI/UX 웹디자인&웹퍼블리싱 과정 수료</li>
+                            <li><span>2016. 02</span>충북대학교 신소재공학과 졸업</li>
+                        </ul>
+                    </li>
+                    <li class="about-wrap skill">
+                        <em>Skills</em>
+                        <ul class="about-wrap-list">
+                            <li>photoshop</li>
+                            <li>illustrator</li>
+                            <li>figma</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>js</li>
+                            <li>jquery</li>
+                        </ul>
+                    </li>
+                    <li class="about-wrap license">
+                        <em>Licenses</em>
+                        <ul class="about-wrap-list">
+                            <li>GTQ 1급</li>
+                            <li>컴퓨터활용능력 1급</li>
+                            <li>운전면허 2종 보통</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="web01 sec scroll-top">
+        <div class="inner">
+            <div class="panel-wrap" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                <figure class="web-img">
+                    <img src="img/web01-01.jpg" alt="">
+                    <img src="img/web01-02.jpg" alt="">
+                </figure>
+                <div class="web-txt">
+                    <strong><span>Frank burger<span>.</span></span>website renewal</strong>
+                    <div class="web-txt-desc">
+                        <p>제작기간 : 2022.12 ~ 2023.01</p>
+                        <p>그누보드를 이용하여 제작한 홈페이지입니다.<br>메인 비주얼에 동영상을 사용하였고, 그누보드 스킨을 활용해 로그인,<br>회원가입 및 게시판 등 웹사이트가 실제로 구동하게 만들었습니다. </p>
+                        <div class="web-btn">
+                            <a href="http://khy2.dothome.co.kr/" target="_blank">Website</a>
+                            <a href="#" data-toggle="modal" data-target="#web01">Concept</a>
+                            <a href="web/project02/frankburger.pdf" download="file.pdf" target="_self">Project plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="web-bg"></div>
+        <!-- 모달 -->
+        <div class="modal fade" id="web01">
+            <div class="modal-dialog" style="width: 1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">Frank Burger 웹사이트 리뉴얼 프로젝트</div>
+                    <div class="modal-body">
+                        <img src="web/project02/concept.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="web02 sec">
+        <div class="inner">
+            <div class="panel-wrap" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                <figure class="web-img">
+                    <img src="img/web02.png" alt="">
+                </figure>
+                <div class="web-txt">
+                    <strong><span>Merlot.lab<span>.</span></span>website renewal</strong>
+                    <div class="web-txt-desc">
+                        <p>제작기간 : 2023.01</p>
+                        <p>Flex를 사용하여 제작한 웹, 태블릿, 모바일에 최적화된<br>반응형 웹페이지입니다.<br>box-sizing은 필요한 태그에만 적용하여, 코드 수를 줄였습니다.</p>
+                        <div class="web-btn">
+                            <a href="web/project03/index.html" target="_blank">Website</a>
+                            <a href="#" data-toggle="modal" data-target="#web02">Concept</a>
+                            <a href="img/web02.pdf" download="file.pdf" target="_self">Project plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="web-bg"></div>
+        <!-- 모달 -->
+        <div class="modal fade" id="web02">
+            <div class="modal-dialog" style="width: 1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">Merlot.lab 웹사이트 리뉴얼 프로젝트</div>
+                    <div class="modal-body">
+                        <img src="img/web02-concept.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="web03 sec">
+        <div class="inner">
+            <div class="panel-wrap" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                <figure class="web-img">
+                    <img src="img/web03.png" alt="">
+                </figure>
+                <div class="web-txt">
+                    <strong><span>Craft Biennale<span>.</span></span>website renewal</strong>
+                    <div class="web-txt-desc">
+                        <p>제작기간 : 2022.10 ~ 2022.11</p>
+                        <p>xhtml과 css를 사용하여 구현한 적응형 홈페이지입니다.<br>각 요소들의 나열과 배열을 맞추기 위해서 float을 사용하였고,<br>box-sizing은 사용하지 않아 width와 height값을 계산하여 제작했습니다.</p>
+                        <div class="web-btn">
+                            <a href="web/project01/index.html" target="_blank">Website</a>
+                            <a href="#" data-toggle="modal" data-target="#web03">Concept</a>
+                            <a href="img/web03.pdf" download="file.pdf" target="_self">Project plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="web-bg"></div>
+        <!-- 모달 -->
+        <div class="modal fade" id="web03">
+            <div class="modal-dialog" style="width: 1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">Cheongju Craft Biennale 웹사이트 리뉴얼 프로젝트</div>
+                    <div class="modal-body">
+                        <img src="img/web03-concept.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="multi sec scroll-top">
+        <div class="inner">
+            <div class="panel-wrap">
+                <div class="multi-sabon" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+                    <figure class="multi-img">
+                        <a href="web/responsive-sabon/responsive-sabon.html" target="_blank"><img src="img/sabon1.jpg" alt=""></a>
+                    </figure>
+                    <div class="multi-txt">
+                        <strong>Sabon <span>Responsible website</span></strong>
+                        <p>반응형 홈페이지의 이해를 위해 제작한 페이지입니다.<br>window의 width를 1400px, 1024px, 640px 3구간으로 나누어서 작업했습니다.</p>
+                    </div>
+                    <div class="web-btn">
+                        <a href="web/responsive-sabon/responsive-sabon.html" target="_blank">View More</a>
+                    </div>
+                </div>
+                <div class="multi-mini" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+                    <figure class="multi-img">
+                        <a href="dy/dy01.html" target="_blank"><img src="img/minions.jpg" alt=""></a>
+                    </figure>
+                    <div class="multi-txt">
+                        <strong>Minions <span>Multi Dynamic page</span></strong>
+                        <p>VIDE jquery plugin을 사용한 동영상 홈페이지입니다.<br>transform과 animation 기능을 활용하여 dynamic한 효과를 주었습니다.</p>
+                    </div>
+                    <div class="web-btn">
+                        <a href="dy/dy01.html" target="_blank">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="web-bg"></div>
+    </section>
+    <section class="figma sec scroll-top">
+        <div class="panel-wrap inner">
+            <div class="figma-txt">
+                <strong data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">UI/UX Mobile Design</strong>
+                <em data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">CAMFIT<span>application</span></em>
+                <p class="figma-txt-desc">"피그마"를 활용한 모바일 어플리케이션 리디자인 프로젝트입니다.<br>캠핏은 캠핑장 정보를 얻을 수 있는 앱으로<br>사용자의 요구사항을 적용하여 편의성을 높일 수 있게 리디자인 했습니다.</p>
+                <div class="web-btn">
+                    <a href="https://www.figma.com/file/SVYaCgcEv0tYBoq1Udyg3a/camfit?node-id=0%3A1&t=UkKtioOlXTbzqHJU-0" target="_blank">View More</a>
+                    <a href="#" data-toggle="modal" data-target="#camfit">Concept</a>
+                </div>
+            </div>
+            <figure class="figma-img" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+                <img src="img/figma1.png" alt="">
+                <img src="img/figma2.png" alt="">
+            </figure>
+        </div>
+        <div class="web-bg"></div>
+        <!-- 모달 -->
+        <div class="modal fade" id="camfit">
+            <div class="modal-dialog" style="width: 1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">UI/UX FIGMA</div>
+                    <div class="modal-body">
+                        <img src="figma/figma-concept.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="graphic sec scroll-top">
+        <div class="panel-wrap inner">
+            <div class="graphic-txt">
+                <div class="graphic-txt-tit">
+                    <strong>Graphic</strong>
+                    <strong>Photoshop</strong>
+                    <strong>Illustrator</strong>
+                </div>
+                <p>Personal Identity / Isometric / Banner</p>
+            </div>
+            <ul class="graphic-list">
+                <li><a href="#" data-toggle="modal" data-target="#pi"><img src="img/pi.jpg" alt=""></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ill"><img src="img/ill.jpg" alt=""></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#photo"><img src="img/photo.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 모달 -->
+        <div class="modal fade" id="pi">
+            <div class="modal-dialog" style="width: 1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">Personal Identity Concept Sheet</div>
+                    <div class="modal-body">
+                        <img src="pi/pi-concept.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ill">
+            <div class="modal-dialog" style="width: 450px;">
+                <div class="modal-content">
+                    <div class="modal-header">Illustrator isometric</div>
+                    <div class="modal-body">
+                        <img src="ill/isometric.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="photo">
+            <div class="modal-dialog" style="width: 830px;">
+                <div class="modal-content">
+                    <div class="modal-header">Photoshop promotion banner</div>
+                    <div class="modal-body">
+                        <img src="photo/promotion-f.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hover sec">
+        <div class="panel-wrap inner">
+            <div class="hover-txt">
+                <strong class="hover-txt-tit">Multy<span>Hover Effect</span></strong>
+                <p>EXPLORER ZOE / ASTRONAUT ZOE</p>
+            </div>
+            <div class="hover-wrap">
+                <article class="hover01">
+                    <header class="hover01-header">
+                        <h1 class="hover01-tit">EXPLORER <span>ZOE</span></h1>
+                        <ul class="hover01-sns">
+                            <li><a href="#"><span class="material-symbols-outlined">home</span></a></li>
+                            <li><a href="#"><span class="material-symbols-outlined">heart_plus</span></a></li>
+                            <li><a href="#"><span class="material-symbols-outlined">mood</span></a></li>
+                        </ul>
+                    </header>
+                    <nav class="hover01-gnb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                    <p class="hover01-txt">I don't need it to be easy, I need it to be worth it. <span>- Lill Wayne</span></p>
+                    <figure class="hover01-img">
+                        <img src="hover/img/hover01.jpg" alt="심해">
+                    </figure>
+                </article>
+                <article class="hover02">
+                    <h1 class="hover02-tit">ASTRONAUT <span>ZOE</span></h1>
+                    <p class="hover02-txt">Everything you can imagine is real. <br><span>- Pablo Picasso -</span></p>
+                    <ul class="hover02-line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <figure class="hover02-img">
+                        <img src="hover/img/hover02.jpg" alt="우주">
+                    </figure>
+                </article>
+            </div>
+        </div>
+        <div class="hover-bg"></div>
+    </section>
+    <section class="contact sec scroll-top">
+        <div class="inner">
+            <div class="contact-txt">
+                <strong class="contact-txt-tit">Contact</strong>
+                <p>KIM, HWA YEONG</p>
+                <p>010 - 2675 - 0843</p>
+                <p>lek1123@naver.com</p>
+            </div>
+            <figure class="contact-icon"><img src="img/contact.png" alt=""></figure>
+            <footer class="footer">
+                <ul class="f-menu">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#">dynamic</a></li>
+                    <li><a href="#">UI/UX figma</a></li>
+                    <li><a href="#">graphic/hover</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <p class="copy">©Copyright 2023 hwa-yeong Portfolio</p>
+            </footer>
+        </div>  
+    </section>
+</body>
+</html>

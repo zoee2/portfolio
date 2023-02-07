@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* SUB5-COMMON - S */
+.visual {background-image: url(../img/sub-visual5.png);}
+/* SUB5-COMMON - E */
+
+/* SUB5-1 - S */
+.notification .sch-form {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.notification .sch-box {
+    display: inline-block;
+    position: relative;}
+.notification #sch-box-text {
+    width: 596px; height: 56px;
+    border: none; border-bottom: 2px solid #333;
+    font-size: 18px; line-height: 58px; color: #777;
+    
+}
+.notification .sch-box-btn {
+    width: 58px; height: 58px;
+    border: none;
+    background-color: #fff;
+    position: absolute; right: 0; top: 0;
+}
+.notification .sch-box-btn i {font-size: 25px; line-height: 58px; color: #777;}
+.notification-box {
+    margin-bottom: 60px;
+    position: relative;
+}
+.notification-box:before {content: "";
+    width: 1280px; height: 2px;
+    background-color: #333;
+    position: absolute; left: 0; top: -2px;
+}
+.notification-box:after {content: "";
+    width: 1280px; height: 2px;
+    background-color: #333;
+    position: absolute; left: 0; bottom: -2px;
+}
+.notification-box-tit {
+    height: 60px;
+    font-weight: 500; font-size: 16px; line-height: 60px; color: #333; vertical-align: auto;
+    position: relative;
+}
+.notification-box-tit:after {content: "";
+    width: 1280px; height: 1px;
+    background-color: #bbb;
+    position: absolute; left: 0; bottom: 0;
+}
+.notification-tit-number {width: 140px;}
+.notification-tit-name {width: 860px;}
+.notification-tit-date {width: 140px;}
+.notification-tit-hits {width: 140px;}
+.notification-box-content {
+    font-weight: 300; line-height: 60px; text-align: center;
+    position: relative;
+}
+.notification-box-content:first-child {background-color: #fbfbfb;}
+.notification-box-content:after {content: "";
+    width: 1280px; height: 1px;
+    background-color: #eee;
+    position: absolute; left: 0; bottom: 0;
+}
+.notification-box-content:last-child:after {display: none;}
+.notification-box-content:first-child {font-weight: 500;}
+.notification-content-name {
+    padding-left: 40px;    
+    text-align: left;
+}
+.notification-content-name a {
+    display: block; 
+    height: 60px;
+    line-height: 60px;
+}
+.notification-page {position: relative;}
+.notification-page-number {
+    height: 20px;
+    padding: 0 515px; margin-bottom: 160px;
+}
+.notification-page-number li {
+    float: left; 
+}
+.notification-page-number a {
+    display: block;
+    width: 25px; height: 20px;
+    line-height: 20px; text-align: center; color: #999;
+}
+.notification-page-move a {
+    font-size: 14px; line-height: 20px; color: #777;
+    position: absolute; left: 475px; top: 0;
+}
+.notification-page-move a:last-child {left: 780px;}
+.notification-page-move a:after {content: "";
+    width: 37px; height: 7px;
+    background-image: url(../img/icon-arrow-gray.png);
+    position: absolute; left: 30px; top: 8px;
+}
+.notification-page-move a:first-child:after {
+    background-position: 0 7px;
+    left: -40px;
+}
+.notification-page-number a:hover {font-weight: 500; color: #2e8b57;}
+.notification-page-number li.on a {font-weight: 500; color: #2e8b57;}
+/* SUB5-1 - E */
